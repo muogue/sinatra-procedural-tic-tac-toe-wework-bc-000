@@ -4,7 +4,7 @@ class Application < Sinatra::Base
 
   get '/' do
     @tic = TicTacToe.new
-    @tic
+    
     erb :index
   end
 
