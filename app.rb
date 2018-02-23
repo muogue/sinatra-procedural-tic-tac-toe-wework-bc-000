@@ -18,6 +18,8 @@ class Application < Sinatra::Base
         erb :winner
         return
       else
+        erb :draw
+        return
       end
     end
     erb :index
