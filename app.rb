@@ -15,6 +15,8 @@ class Application < Sinatra::Base
     if (@game.over?)
       if (@game.won?)
         @winner = @game.winner
+        erb :winner
+        return
       else
       end
     end
