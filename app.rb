@@ -16,12 +16,11 @@ class Application < Sinatra::Base
       if (@game.won?)
         @winner = @game.winner
         erb :winner
-        return
       else
         erb :draw
-        return
       end
+    else
+      erb :index
     end
-    erb :index
   end
 end
