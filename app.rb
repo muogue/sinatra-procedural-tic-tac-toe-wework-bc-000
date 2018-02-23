@@ -13,6 +13,7 @@ class Application < Sinatra::Base
     @game = TicTacToe.new
     @game.turns(params)
     if (@game.won?)
+    end
     erb :index
   end
 end
