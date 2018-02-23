@@ -14,7 +14,7 @@ class Application < Sinatra::Base
     @game.turns(params)
     if (@game.over?)
       if (@game.won?)
-        
+        @winner = @game.winner
       else
       end
     end
