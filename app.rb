@@ -12,7 +12,11 @@ class Application < Sinatra::Base
   post '/' do
     @game = TicTacToe.new
     @game.turns(params)
-    if (@game.won?)
+    if (@game.over?)
+      if (@game.won?)
+        
+      else
+      end
     end
     erb :index
   end
