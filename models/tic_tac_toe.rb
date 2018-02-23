@@ -94,6 +94,8 @@ class TicTacToe
   end
 
   def turns(thing)
-    
+    thing.each do |key, value|
+      move(key.to_i, value)
+    end
   end
 end
