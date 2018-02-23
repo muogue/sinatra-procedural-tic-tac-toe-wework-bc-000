@@ -3,7 +3,8 @@ require_relative 'config/environment'
 class Application < Sinatra::Base
 
   get '/' do
-    @tictactoe = TicTacToe.new
+    @tic = TicTacToe.new
+    @tic
     erb :index
   end
 
