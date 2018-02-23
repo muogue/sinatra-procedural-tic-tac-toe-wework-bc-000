@@ -74,6 +74,11 @@ class TicTacToe
     @board.all?{|square| square != " " }
   end
 
+  def turn(thing)
+    
+  end
+  
+
   def draw?
     full? && !won?
   end
