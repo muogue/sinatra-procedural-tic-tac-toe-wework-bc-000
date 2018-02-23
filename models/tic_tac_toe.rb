@@ -13,8 +13,8 @@ class TicTacToe
     @board
   end
 
-  def board=(index, token)
-    @board[index] = token
+  def board=(board)
+    @board = board
   end
 
   def display_board
